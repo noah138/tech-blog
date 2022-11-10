@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog Dashboard</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
+</head>
+
+{{!-- you are logged in, so same navbar as main but with home, dashboard, logout--}}
+<body class="min-100-vh flex-column">
+
+    <nav class="navbar">
+        <ul>
+        <li class="nav-item"><a href="/">Home</a></li>
+        <li class="nav-item"><a href="/dashboard">Dashboard</a></li>
+        <li class="nav-item"><a href="/" id="logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+      <h1 "app-title">Dashboard</h1>
+    </header>
+
+    <main>
+        {{{body}}}
+    </main>
+
+    {{!-- footer to add a new post --}}
+    {{!-- footer is centered --}}
+    <footer class="footer flex-row justify-center">
+        <a href="/dashboard/new">+ New Post</a>
+    </footer>
+</body>
+
+</html>
+<script src="../../public/js/logout.js"></script>
+
+

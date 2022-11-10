@@ -26,18 +26,14 @@ router.post('/login', async (req, res) => {
       const user = await User.findOne({ where: { username: req.body.username } });
   
       if (!user) {
-        res
-          .status(400)
-          .json({ message: 'User account cannot be found' });
+        res.status(400).json({ message: 'User account cannot be found' });
         return;
       }
   
       const validPassword = await userData.checkPassword(req.body.password);
   
       if (!validPassword) {
-        res
-          .status(400)
-          .json({ message: 'Email or password is incorrect, please try again' });
+        res.status(400).json({ message: 'Email or password is incorrect, please try again' });
         return;
       }
   

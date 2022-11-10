@@ -27,7 +27,7 @@ router.get('/new', (req, res) => {
     res.render('new-post')
 });
 
-// when you click on a past
+// when you click on a post
 router.get('/edit/:id', withAuth, async (req, res) => {
     try {
         const postData = await Post.findByPk(req.params.id)

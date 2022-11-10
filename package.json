@@ -8,5 +8,23 @@
     "express-session": "^1.17.3",
     "mysql2": "^2.3.3",
     "sequelize": "^6.25.5"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "tech-blog",
+  "description": "``` npm install express npm install express-handlebars npm install mysql2 npm install sequelize npm install dotenv npm install bcrypt npm install express-session npm install connect-session-sequelize ```",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noah138/tech-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noah138/tech-blog/issues"
+  },
+  "homepage": "https://github.com/noah138/tech-blog#readme"
 }
